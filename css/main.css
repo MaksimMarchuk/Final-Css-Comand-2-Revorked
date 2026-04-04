@@ -370,3 +370,21 @@ body {
   align-items: center;
   padding: 30px;
 }
+
+@media (min-width: 480px) {
+  .explain-div {
+    width: 480px;
+    height: 1624px;
+    background-color: #84A178;
+  }
+  .quantity-text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FCFCFC;
+  }
+}
