@@ -157,4 +157,58 @@
             text-align: center;
             color: $background-main;
     }
+    .lorem-expalin {
+        
+    }
+}
+@media (min-width: 768px) {
+    .explain-div {
+        width: 768px;
+            height: 1075px;
+            angle: 0 deg;
+            opacity: 1;
+            color: $sections-background;
+    }
+    .explain-omega {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-colums {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .width-colums {
+        padding: 50px;
+    }
+}
+@media (min-width: 1200px) {
+    .explain-div {
+        width: 1200px;
+        height: 1228px;
+        angle: 0 deg;
+        opacity: 1;
+        angle: 0 deg;
+        opacity: 1;
+        color: $sections-background;
+    }
+    .lorem-expalin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 463px;
+        height: 111px;
+        top: 326px;
+        left: 616px;
+        angle: 0 deg;
+        opacity: 1;
+        padding: 0;
+    }
+    .text-directions {
+        display: flex;
+        flex-direction: column;
+    }
 }
