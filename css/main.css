@@ -439,3 +439,106 @@ body {
     flex-direction: column;
   }
 }
+.product-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #FCFCFC;
+  background-image: url("src/img/backgroung-icecream.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 165px;
+}
+.product-section .product-text {
+  margin-bottom: 40px;
+}
+.product-section .product-text h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+}
+.product-section .product-text h1 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #131313;
+  font-family: Seymour One;
+  font-size: 30px;
+}
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.product-section .product-card {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  padding: 120px 20px 30px;
+  border-radius: 24px;
+  text-align: center;
+  background: #D6936D;
+}
+.product-section .product-card:nth-child(2) {
+  background: #AEC6A5;
+}
+.product-section .product-card:nth-child(3) {
+  background: #EFD478;
+}
+.product-section .product-card .icecream-img,
+.product-section .product-card .coffee-img,
+.product-section .product-card .milkshakes-img {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
+}
+.product-section .product-card .icecream-img img,
+.product-section .product-card .coffee-img img,
+.product-section .product-card .milkshakes-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: 0px;
+}
+.product-section .product-card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.product-section .product-card p {
+  margin: 15px 0 25px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (min-width: 1200px) {
+  .product-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 38px;
+  }
+}
+@media (min-width: 768px) {
+  .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+  }
+}
