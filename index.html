@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="sass/main.css">
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +31,12 @@
             <ul class="nav-container">
                 <li class="nav-logo"><img src="./src/img/iceCream-logo.webp" alt="logo"></li>
 
-                <li class="nav-direction">Home</li>
-                <li class="nav-direction">How it’s made?</li>
-                <li class="nav-direction">Our products</li>
-                <li class="nav-direction">Contact</li>
+                <div class="nav-direction-div">
+                    <li class="nav-direction">Home</li>
+                    <li class="nav-direction">How it’s made?</li>
+                    <li class="nav-direction">Our products</li>
+                    <li class="nav-direction">Contact</li>
+                </div>
 
                 <div class="nav-btns-div">
                     <li class="nav-element"><i class="bi bi-list"></i></li>
@@ -64,6 +67,7 @@
             </div>
             <div class="hero-img-div">
                 <picture>
+                    <source srcset="./src/img/MainIcecream-desktop.webp" media="(min-width: 1200px)">
                     <source srcset="./src/img/MainIcecream-tablet.webp" media="(min-width: 768px)">
                     <img src="./src/img/MainIcecream-mobile.webp" class="iceCream-img" alt="Ice Cream">
                 </picture>
@@ -78,51 +82,105 @@
 
     </header>
     <main class="main">
-        <section>
-            <h2>100%</h2>
-            <section class="product-section">
-                <h2>100% natural</h2>
-                <h1>products</h1>
-
+             <section class="product-section">
+                <div class="product-text">
+                <h2 style="text-transform: uppercase;" >100% natural</h2>
+                <h1 style="text-transform: uppercase;">products</h1>
+                </div>
                 <div class="product-card">
-                    <img src="" alt="">
+                    <div class="icecream-img">
+                    <img src="src/img/icecream-card.png" alt="">
+                    </div>
                     <h3>ice cream</h3>
                     <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                    <img src="src/img/Arrow.png" alt="">
                 </div>
 
                 <div class="product-card">
-                    <img src="" alt="">
+                    <div class="coffee-img">
+                    <img src="src/img/coffee-card.png" alt="">
+                    </div>
                     <h3>ice coffee</h3>
                     <p>Fragrant invigorating drink created from 100% natural ingredients without the use of
                         preservatives and flavor enhancers</p>
+                        <img src="src/img/Arrow.png" alt="">
                 </div>
 
                 <div class="product-card">
-                    <img src="" alt="">
+                    <div class="milkshakes-img">
+                    <img src="src/img/milkshakes-card.png" alt="">
+                    </div>
                     <h3>milkshakes</h3>
                     <p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other
                         sweets of your choice</p>
+                        <img src="src/img/Arrow.png" alt="">
                 </div>
 
             </section>
 
             <section class="explain-div">
-                <h2>tradition and love</h2>
-                <h1>how it’s made?</h1>
+                <div class="direction-explain">
+                <h2 class="explain-text">TRADITION AND LOVE</h2>
+                <h1 class="explain-h1">how it’s made?</h1>
+                </div>
 
                 <div class="explain-main-text-div">
-                    <img src="" alt="">
-
+                            <div class="explain-omega">
+                    <div class="image-exlain">
+                    <img class="explain-animal" src="src/img/BigCow.webp" alt="cow"> 
+                    </div>
+                    <div class="explain-dir">
+                            <div class="text-directions">
+                        <div class="lorem-expalin">
                     <p>Ice is a place where you will become not only a little happier, but also healthier.
                         Health is the main value for us, and we follow it when creating our handmade desserts. </p>
-
+                        </div>
+                         <div class="lorem-expalin">
                     <p>We use traditional recipes and 100% natural ingredients.
                         Our products are so natural that they can be given to children from the age of three years.
                         Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
-
-                    <p>This is enough to choose ice cream and coffee for any mood!</p>
-
-                    <button>Read more</button>
+                        </div>
+                          <div class="lorem-expalin">
+                    <p class="text-cow">This is enough to choose ice cream and coffee for any mood!</p>
+                         </div>
+                            </div> 
+                                                 <div class="btn-direction">
+                   <button class="button-explain">Read more <i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                            </div>
+                            </div>
+                </div>
+                <div class="image-colums">
+                    <div class="width-colums">
+                        <div class="mini-direction">
+                        <img class="image-mini" src="src/img/MiniCow.webp" alt="minicow">
+                        </div>
+                        <p class="quantity">721</p>
+                           <div class="quantity-text">
+                            <br> Aliquam ac dui vel dui vulputate
+                            <br>  consectetur. Mauris massa
+                            </div> 
+                    </div>
+                       <div class="width-colums">
+                        <div  class="mini-direction">
+                            <img class="image-mini" src="src/img/MiniWeight.webp" alt="weight"> 
+                        </div>
+                        <p class="quantity">16KG</p>
+                        <div class="quantity-text">
+                            <br> Aliquam ac dui vel dui vulputate
+                            <br>  consectetur. Mauris massa
+                    </div> 
+                    </div>
+                       <div class="width-colums">
+                        <div class="mini-direction">
+                            <img class="image-mini" src="src/img/MiniIcecream.webp" alt="ice">
+                        </div>
+                        <p class="quantity">84</p>
+                         <div class="quantity-text">
+                            <br> Aliquam ac dui vel dui vulputate
+                            <br>  consectetur. Mauris massa
+                        </div> 
+                    </div>
                 </div>
 
             </section>

@@ -173,8 +173,8 @@ body {
     padding-top: 20px;
   }
   .header nav .nav-container {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 16px;
+    margin-right: 16px;
     padding: 0;
   }
   .header nav .nav-container .nav-btns-div {
@@ -207,8 +207,8 @@ body {
     height: 347px;
     display: flex;
     flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .header .hero-sect .hero-info-div .hero-prevew-div {
     margin-top: 10px;
@@ -271,5 +271,482 @@ body {
     margin-top: 0px;
     background-image: none;
     margin-left: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    height: 664px;
+    background-image: url("/src/img/dots-bg-desctop.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  .header nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header nav .nav-container .nav-direction-div {
+    display: flex;
+    gap: 20px;
+  }
+  .header nav .nav-container .nav-direction-div .nav-direction {
+    display: block;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FCFCFC;
+    transition-duration: 0.5s;
+  }
+  .header nav .nav-container .nav-direction-div .nav-direction:hover {
+    scale: 1.1;
+    color: #F8D24E;
+  }
+  .header .hero-sect {
+    background-image: none;
+    height: 596px;
+  }
+  .header .hero-sect .hero-info-div .hero-prevew-div {
+    margin-top: 50px;
+  }
+  .header .hero-sect .hero-info-div .hero-prevew-div p {
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    width: 367px;
+  }
+  .header .hero-sect .hero-info-div .hero-prevew-div span {
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+  }
+  .header .hero-sect .hero-info-div .hero-prevew-div div {
+    width: 350px;
+    margin-top: 40px;
+  }
+  .header .hero-sect .hero-info-div .hero-prevew-div div button {
+    width: 134px;
+    height: 42px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .header .hero-sect .hero-info-div .hero-prevew-div div a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+  }
+  .header .hero-sect .hero-info-div .hero-mediocre-div {
+    margin-top: 60px;
+  }
+  .header .hero-sect .hero-info-div .hero-mediocre-div img {
+    width: 225px;
+    height: 225px;
+  }
+  .header .hero-sect .hero-info-div .hero-mediocre-div div {
+    position: relative;
+    top: 25px;
+  }
+  .header .hero-sect .hero-info-div .hero-mediocre-div div p {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    width: 200px;
+  }
+  .header .hero-sect .hero-img-div {
+    margin-left: 255px;
+  }
+  .header .hero-sect .hero-numbers-div {
+    margin-left: 97px;
+  }
+  .header .hero-sect .hero-numbers-div h1 {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .header .hero-sect .hero-numbers-div p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+}
+.explain-div {
+  height: 1524px;
+  background-color: #84A178;
+}
+.explain-div .explain-text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+.explain-div .explain-h1 {
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 30px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+.explain-div .direction-explain {
+  padding: 40px;
+}
+.explain-div .explain-animal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+  height: auto;
+  top: 263px;
+  left: 21px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 140px;
+  background-color: #84A178;
+}
+
+.lorem-expalin {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 10px;
+  leading-trim: NONE;
+  letter-spacing: 4%;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.explain-dir {
+  padding: 20px;
+}
+
+.btn-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-direction .button-explain {
+  width: 164px;
+  height: 42px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: #F8D24E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.btn-direction .button-explain {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.image-exlain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-mini {
+  background-color: #F8D24E;
+  width: 50px;
+  height: 50px;
+  top: 7px;
+  left: 7px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.image-colums {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-mini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  angle: 0 deg;
+  opacity: 1;
+}
+
+.quantity {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.quantity-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 11px;
+  leading-trim: NONE;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.mini-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+@media (min-width: 480px) {
+  .explain-div {
+    height: 1624px;
+    background-color: #84A178;
+  }
+  .quantity-text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FCFCFC;
+  }
+  .text-directions {
+    text-align: start;
+    width: 336px;
+  }
+  .explain-animal {
+    width: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .explain-div {
+    height: 1075px;
+    angle: 0 deg;
+    opacity: 1;
+    color: #84A178;
+  }
+  .explain-omega {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-colums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .width-colums {
+    padding: 50px;
+  }
+  .lorem-expalin {
+    text-align: start;
+  }
+  .explain-animal {
+    width: 330px;
+    top: 214px;
+    left: 32px;
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 165px;
+  }
+  .btn-direction {
+    display: flex;
+    justify-content: start;
+  }
+}
+@media (min-width: 1200px) {
+  .explain-div {
+    height: 1228px;
+    angle: 0 deg;
+    opacity: 1;
+    angle: 0 deg;
+    opacity: 1;
+    color: #84A178;
+  }
+  .lorem-expalin {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .text-directions {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-direction {
+    display: flex;
+    justify-content: start;
+  }
+  .text-cow {
+    display: flex;
+    text-align: start;
+  }
+  .btn-directions {
+    text-align: start;
+  }
+  .image-exlain {
+    width: 491px;
+    height: 529px;
+  }
+  .explain-animal {
+    width: 491px;
+  }
+}
+.product-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #FCFCFC;
+  background-image: url("src/img/backgroung-icecream.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 165px;
+}
+.product-section .product-text {
+  margin-bottom: 40px;
+}
+.product-section .product-text h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+}
+.product-section .product-text h1 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #131313;
+  font-family: Seymour One;
+  font-size: 30px;
+}
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.product-section .product-card {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  padding: 120px 20px 30px;
+  border-radius: 24px;
+  text-align: center;
+  background: #D6936D;
+}
+.product-section .product-card:nth-child(2) {
+  background: #AEC6A5;
+}
+.product-section .product-card:nth-child(3) {
+  background: #EFD478;
+}
+.product-section .product-card .icecream-img,
+.product-section .product-card .coffee-img,
+.product-section .product-card .milkshakes-img {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
+}
+.product-section .product-card .icecream-img img,
+.product-section .product-card .coffee-img img,
+.product-section .product-card .milkshakes-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: 0px;
+}
+.product-section .product-card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.product-section .product-card p {
+  margin: 15px 0 25px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (min-width: 1200px) {
+  .product-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 38px;
+  }
+}
+@media (min-width: 768px) {
+  .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
   }
 }
