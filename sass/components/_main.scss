@@ -1,5 +1,4 @@
 .explain-div {
-    width: 320px;
     height: 1524px;
     background-color: #84A178;
     .explain-text {
@@ -31,8 +30,8 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        width: 278.9964294433594px;
-            height: 278px;
+        max-width: 100%;
+         height: auto;
             top: 263px;
             left: 21px;
             angle: 0 deg;
@@ -46,7 +45,6 @@
         font-weight: 400;
         font-size: 10px;
         leading-trim: NONE;
-        line-height: 176%;
         letter-spacing: 4%;
         text-align: center;
         color: $base-text;
@@ -143,7 +141,6 @@
 }
 @media (min-width: 480px) {
     .explain-div {
-            width: 480px;
             height: 1624px;
             background-color: #84A178;
     }
@@ -157,13 +154,17 @@
             text-align: center;
             color: $background-main;
     }
-    .lorem-expalin {
-        
+    .text-directions {
+        text-align: start;
+        width: 336px;
+
+    }
+    .explain-animal {
+        width: 280px;
     }
 }
 @media (min-width: 768px) {
     .explain-div {
-        width: 768px;
             height: 1075px;
             angle: 0 deg;
             opacity: 1;
@@ -183,10 +184,24 @@
     .width-colums {
         padding: 50px;
     }
+    .lorem-expalin {
+        text-align: start;
+    }
+    .explain-animal {
+        width: 330px;
+            top: 214px;
+            left: 32px;
+            angle: 0 deg;
+            opacity: 1;
+            border-radius: 165px;
+    }
+    .btn-direction {
+        display: flex;
+        justify-content: start;
+    }
 }
 @media (min-width: 1200px) {
     .explain-div {
-        width: 1200px;
         height: 1228px;
         angle: 0 deg;
         opacity: 1;
@@ -197,18 +212,28 @@
     .lorem-expalin {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 463px;
-        height: 111px;
-        top: 326px;
-        left: 616px;
-        angle: 0 deg;
-        opacity: 1;
-        padding: 0;
+        align-items: start;
     }
     .text-directions {
         display: flex;
         flex-direction: column;
+    }
+        .btn-direction {
+            display: flex;
+            justify-content: start;
+        }
+    .text-cow {
+        display: flex;
+        text-align: start;
+    }
+    .btn-directions {
+            text-align: start;
+    }
+    .image-exlain {
+             width: 491px;
+            height: 529px;
+    }
+    .explain-animal {
+        width: 491px;
     }
 }
