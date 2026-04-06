@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -386,5 +387,123 @@ body {
     letter-spacing: 0%;
     text-align: center;
     color: #FCFCFC;
+  }
+}
+.product-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #FCFCFC;
+  background-image: url("/src/img/backgroung-icecream.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.product-section .product-text {
+  margin-bottom: 40px;
+}
+.product-section .product-text h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+.product-section .product-text h1 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #131313;
+  font-family: Seymour One;
+  text-transform: uppercase;
+}
+.product-section .cards {
+  margin-top: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 168px;
+}
+.product-section .product-card {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 420px;
+  padding: 120px 20px 30px;
+  border-radius: 24px;
+  text-align: center;
+  background: #AEC6A5;
+}
+.product-section .product-card:nth-child(2) {
+  background: #EFD478;
+}
+.product-section .product-card:nth-child(3) {
+  background: #D6936D;
+}
+.product-section .product-card .icecream-img,
+.product-section .product-card .coffee-img,
+.product-section .product-card .milkshakes-img {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
+}
+.product-section .product-card .icecream-img img,
+.product-section .product-card .coffee-img img,
+.product-section .product-card .milkshakes-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+.product-section .product-card .Arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product-section .product-card h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Montserrat;
+}
+.product-section .product-card p {
+  margin: 15px 0 25px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  font-weight: 300;
+  font-family: Montserrat;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .product-section .cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+  .product-section .product-card {
+    width: calc((100% - 64px) / 3);
+    max-width: 240px;
+  }
+}
+@media (min-width: 1200px) {
+  .product-section .cards {
+    gap: 38px;
+  }
+  .product-section .product-card {
+    max-width: 370px;
   }
 }
