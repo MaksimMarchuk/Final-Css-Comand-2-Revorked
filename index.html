@@ -31,10 +31,12 @@
             <ul class="nav-container">
                 <li class="nav-logo"><img src="./src/img/iceCream-logo.webp" alt="logo"></li>
 
-                <li class="nav-direction">Home</li>
-                <li class="nav-direction">How it’s made?</li>
-                <li class="nav-direction">Our products</li>
-                <li class="nav-direction">Contact</li>
+                <div class="nav-direction-div">
+                    <li class="nav-direction">Home</li>
+                    <li class="nav-direction">How it’s made?</li>
+                    <li class="nav-direction">Our products</li>
+                    <li class="nav-direction">Contact</li>
+                </div>
 
                 <div class="nav-btns-div">
                     <li class="nav-element"><i class="bi bi-list"></i></li>
@@ -65,6 +67,7 @@
             </div>
             <div class="hero-img-div">
                 <picture>
+                    <source srcset="./src/img/MainIcecream-desktop.webp" media="(min-width: 1200px)">
                     <source srcset="./src/img/MainIcecream-tablet.webp" media="(min-width: 768px)">
                     <img src="./src/img/MainIcecream-mobile.webp" class="iceCream-img" alt="Ice Cream">
                 </picture>
@@ -76,7 +79,7 @@
                 <p>food trucks</p>
             </div>
         </section>
-        
+
     </header>
     <main class="main">
              <section class="product-section">
@@ -123,10 +126,12 @@
                 </div>
 
                 <div class="explain-main-text-div">
+                            <div class="explain-omega">
                     <div class="image-exlain">
-                    <img class="explain-animal" src="src/img/BigCow.webp" alt="cow">
+                    <img class="explain-animal" src="src/img/BigCow.webp" alt="cow"> 
                     </div>
                     <div class="explain-dir">
+                            <div class="text-directions">
                         <div class="lorem-expalin">
                     <p>Ice is a place where you will become not only a little happier, but also healthier.
                         Health is the main value for us, and we follow it when creating our handmade desserts. </p>
@@ -137,16 +142,17 @@
                         Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
                         </div>
                           <div class="lorem-expalin">
-                    <p>This is enough to choose ice cream and coffee for any mood!</p>
+                    <p class="text-cow">This is enough to choose ice cream and coffee for any mood!</p>
                          </div>
-                            </div>
-                        <div class="btn-direction">
+                            </div> 
+                                                 <div class="btn-direction">
                    <button class="button-explain">Read more <i class="bi bi-caret-right-fill"></i></button>
-
                         </div>
+                            </div>
+                            </div>
                 </div>
                 <div class="image-colums">
-                    <div>
+                    <div class="width-colums">
                         <div class="mini-direction">
                         <img class="image-mini" src="src/img/MiniCow.webp" alt="minicow">
                         </div>
@@ -156,7 +162,7 @@
                             <br>  consectetur. Mauris massa
                             </div> 
                     </div>
-                      <div>
+                       <div class="width-colums">
                         <div  class="mini-direction">
                             <img class="image-mini" src="src/img/MiniWeight.webp" alt="weight"> 
                         </div>
@@ -166,7 +172,7 @@
                             <br>  consectetur. Mauris massa
                     </div> 
                     </div>
-                      <div>
+                       <div class="width-colums">
                         <div class="mini-direction">
                             <img class="image-mini" src="src/img/MiniIcecream.webp" alt="ice">
                         </div>
@@ -181,15 +187,28 @@
             </section>
 
             <section class="comment-sect">
-                <img src="" alt="" class="surface-img">
+                <div class="surface-div">
+                    <img src="./src/img/BlueberriesIceCream.webp" alt="" class="surface-img" width="280px"
+                        height="150px">
+                </div>
 
                 <div class="comment-div">
-                    <img src="" alt="">
+                    <div class="comment-img">
+                        <img src="./src/img/MeganFox.webp" alt="" class="" width="110xp" height="160px">
+                    </div>
+                    <div class="comment-text-div">
+                        <p class="comment-text">I love visiting your cafe. You prepare the most delicious ice cream in
+                            Los
+                            Angeles! In addition,
+                            you have beautiful serving, cozy atmosphere and polite staff.</p>
+                    </div>
 
-                    <p>I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition,
-                        you have beautiful serving, cozy atmosphere and polite staff.</p>
-
-                    <p>Emily, Los Angeles</p>
+                    <p class="locate-text">Emily, Los Angeles</p>
+                    <div class="comment-circle">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    </div>
                 </div>
 
             </section>
