@@ -238,21 +238,29 @@
         font-size: 16px;
     }
 }
+
 .bi-arrow-right:hover {
-    animation: pulse 1.5s infinite;
-    @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(4, 87, 7, 0.7);
-            }
-    
-            70% {
-                transform: scale(1.1);
-                box-shadow: 0 0 20px 15px rgba(76, 175, 80, 0);
-            }
-    
-            100% {
-                transform: scale(1);
-            }
+        color: #fff;
+        text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+        animation: neonFlicker 1s infinite;
+                @keyframes neonFlicker {
+                        from {
+                            text-shadow:
+                                0 0 10px rgb(81, 240, 147),
+                                0 0 15x rgb(2, 129, 19);
+                        }
+                
+                        to {
+                            text-shadow:
+                                0 0 20px rgb(45, 196, 90),
+                                0 0 40px rgb(73, 189, 82),
+                                0 0 80px rgb(26, 138, 4);
+                        }
+                    }
+    }
+    .nav-button:hover {
         }
-}
