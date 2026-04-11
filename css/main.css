@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -849,31 +850,36 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Напівпрозорий фон */
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease;
-  width: 100%;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease, visibility 300ms ease;
 }
-.backdrop-products .backdrop-products.is-hidden {
+
+/* А це спеціальний клас, який ПРИХОВУЄ модалку */
+.backdrop-products.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
-.backdrop-products .modal-products {
-  position: relative;
+
+.modal-products {
   background-color: white;
   padding: 20px;
-  width: 280px;
-  max-width: 90%;
-  height: 991px;
   border-radius: 14px;
-  border: 2px solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* Приберіть фіксовану висоту 991px, якщо вона заважає */
+  max-height: 90vh;
+  overflow-y: auto;
 }
-.backdrop-products .btn-close {
+
+.btn-close-products {
   border-style: none;
   align-self: flex-end;
 }
