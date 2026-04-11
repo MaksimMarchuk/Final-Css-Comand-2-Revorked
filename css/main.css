@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -114,22 +115,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #F8D24E;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
 }
-.footer-social-icon:hover {
-  background-color: rgb(245.6717391304, 195.0326086957, 19.1282608696);
-}
-.footer-social-icon svg,
 .footer-social-icon img {
-  width: 22px;
-  height: 22px;
-  fill: #84A178;
-  filter: brightness(0) invert(0) sepia(1) saturate(3) hue-rotate(60deg);
+  width: 34px;
+  height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer-contact-div {
@@ -848,6 +839,7 @@ body {
     font-size: 16px;
   }
 }
+<<<<<<< HEAD
 .bi-arrow-right:hover {
   animation: pulse 1.5s infinite;
 }
@@ -863,6 +855,43 @@ body {
   100% {
     transform: scale(1);
   }
+=======
+.backdrop-products {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Напівпрозорий фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+/* А це спеціальний клас, який ПРИХОВУЄ модалку */
+.backdrop-products.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-products {
+  background-color: white;
+  padding: 20px;
+  border-radius: 14px;
+  /* Приберіть фіксовану висоту 991px, якщо вона заважає */
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.btn-close-products {
+  border-style: none;
+  align-self: flex-end;
 }
 
 .product-section {
