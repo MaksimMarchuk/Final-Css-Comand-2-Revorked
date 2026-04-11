@@ -60,22 +60,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #F8D24E;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
 }
-.footer-social-icon:hover {
-  background-color: rgb(245.6717391304, 195.0326086957, 19.1282608696);
-}
-.footer-social-icon svg,
 .footer-social-icon img {
-  width: 22px;
-  height: 22px;
-  fill: #84A178;
-  filter: brightness(0) invert(0) sepia(1) saturate(3) hue-rotate(60deg);
+  width: 34px;
+  height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer-contact-div {
@@ -542,36 +532,33 @@ body {
     text-align: right;
   }
 }
-.explain-div {
+.explain-section {
+  padding: 10px;
   height: 1524px;
   background-color: #84A178;
 }
-.explain-div .explain-text {
+.explain-section .explain-text {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
   color: #FCFCFC;
 }
-.explain-div .explain-h1 {
+.explain-section .explain-word {
   font-family: Seymour One;
   font-weight: 400;
   font-size: 30px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 4%;
   text-align: center;
   text-transform: uppercase;
   color: #FCFCFC;
 }
-.explain-div .direction-explain {
+.explain-section .direction-explain {
   padding: 40px;
 }
-.explain-div .explain-animal {
+.explain-section .explain-animal {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -579,8 +566,6 @@ body {
   height: auto;
   top: 263px;
   left: 21px;
-  angle: 0 deg;
-  opacity: 1;
   border-radius: 140px;
   background-color: #84A178;
 }
@@ -589,8 +574,6 @@ body {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 10px;
-  leading-trim: NONE;
-  letter-spacing: 4%;
   text-align: center;
   color: #FCFCFC;
 }
@@ -607,8 +590,6 @@ body {
 .btn-direction .button-explain {
   width: 164px;
   height: 42px;
-  angle: 0 deg;
-  opacity: 1;
   border-radius: 10px;
   background-color: #F8D24E;
   display: flex;
@@ -620,9 +601,7 @@ body {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 14px;
-  leading-trim: NONE;
   line-height: 18px;
-  letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
 }
@@ -639,13 +618,11 @@ body {
   height: 50px;
   top: 7px;
   left: 7px;
-  angle: 0 deg;
-  opacity: 1;
   border-radius: 50%;
   padding: 10px;
 }
 
-.image-colums {
+.image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -660,17 +637,13 @@ body {
   width: 50px;
   height: 50px;
   top: 0px;
-  angle: 0 deg;
-  opacity: 1;
 }
 
 .quantity {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 36px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 4%;
   text-align: center;
   text-transform: uppercase;
   color: #FCFCFC;
@@ -680,9 +653,7 @@ body {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 11px;
-  leading-trim: NONE;
   line-height: 170%;
-  letter-spacing: 0%;
   text-align: center;
   color: #FCFCFC;
 }
@@ -694,48 +665,61 @@ body {
   padding: 30px;
 }
 
+.explain-dir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-directions {
+  width: 220px;
+}
+
 @media (min-width: 480px) {
-  .explain-div {
+  .explain-section {
     height: 1624px;
     background-color: #84A178;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .quantity-text {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 12px;
-    leading-trim: NONE;
     line-height: 170%;
-    letter-spacing: 0%;
     text-align: center;
     color: #FCFCFC;
   }
   .text-directions {
-    text-align: start;
-    width: 336px;
+    text-align: center;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .explain-animal {
     width: 280px;
   }
 }
 @media (min-width: 768px) {
-  .explain-div {
+  .explain-section {
     height: 1075px;
-    angle: 0 deg;
-    opacity: 1;
     color: #84A178;
   }
-  .explain-omega {
+  .explain-sector {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .image-colums {
+  .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  .width-colums {
+  .images-section {
     padding: 50px;
   }
   .lorem-expalin {
@@ -745,22 +729,20 @@ body {
     width: 330px;
     top: 214px;
     left: 32px;
-    angle: 0 deg;
-    opacity: 1;
     border-radius: 165px;
   }
   .btn-direction {
     display: flex;
     justify-content: start;
+    padding: 0px 200px 0px 0px;
+  }
+  .text-directions {
+    width: 336px;
   }
 }
-@media (min-width: 1200px) {
-  .explain-div {
+@media (min-width: 1660px) {
+  .explain-section {
     height: 1228px;
-    angle: 0 deg;
-    opacity: 1;
-    angle: 0 deg;
-    opacity: 1;
     color: #84A178;
   }
   .lorem-expalin {
@@ -769,12 +751,14 @@ body {
     align-items: start;
   }
   .text-directions {
+    height: 257px;
     display: flex;
     flex-direction: column;
   }
   .btn-direction {
     display: flex;
     justify-content: start;
+    padding: 100px 190px 0px 0px;
   }
   .text-cow {
     display: flex;
@@ -788,7 +772,8 @@ body {
     height: 529px;
   }
   .explain-animal {
-    width: 491px;
+    height: auto;
+    width: 500px;
   }
 }
 .comment-sect {
@@ -973,6 +958,30 @@ body {
     bottom: 40px;
   }
 }
+.explain-main-text-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 600px;
+}
+
+.lorem-expalin {
+  font-size: 16px;
+}
+
+.bi-arrow-right:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  animation: neonFlicker 1s infinite;
+}
+@keyframes neonFlicker {
+  from {
+    text-shadow: 0 0 10px rgb(81, 240, 147), 0 0 15x rgb(2, 129, 19);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(45, 196, 90), 0 0 40px rgb(73, 189, 82), 0 0 80px rgb(26, 138, 4);
+  }
+}
+
 .backdrop-products {
   position: fixed;
   top: 0;

@@ -1,74 +1,58 @@
-.explain-div {
+.explain-section {
+    padding: 10px;
     height: 1524px;
-    background-color: #84A178;
-
+    background-color: $sections-background;
     .explain-text {
-        font-family: Montserrat;
+    font-family: Montserrat;
         font-weight: 700;
         font-size: 18px;
-        leading-trim: NONE;
         line-height: 100%;
-        letter-spacing: 0%;
         text-align: center;
         text-transform: uppercase;
-        color: $base-text;
+             color: $base-text;
     }
-
-    .explain-h1 {
+    .explain-word {
         font-family: Seymour One;
-        font-weight: 400;
-        font-size: 30px;
-        leading-trim: NONE;
-        line-height: 100%;
-        letter-spacing: 4%;
-        text-align: center;
-        text-transform: uppercase;
-        color: $base-text;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 100%;
+            text-align: center;
+            text-transform: uppercase;
+                color: $base-text;
     }
-
     .direction-explain {
         padding: 40px;
     }
-
     .explain-animal {
         display: flex;
         justify-content: center;
         align-content: center;
         max-width: 100%;
-        height: auto;
-        top: 263px;
-        left: 21px;
-        angle: 0 deg;
-        opacity: 1;
-        border-radius: 140px;
-        background-color: #84A178;
+         height: auto;
+            top: 263px;
+            left: 21px;
+            border-radius: 140px;
+            background-color: $sections-background;
     }
 }
-
 .lorem-expalin {
     font-family: Montserrat;
-    font-weight: 400;
-    font-size: 10px;
-    leading-trim: NONE;
-    letter-spacing: 4%;
-    text-align: center;
-    color: $base-text;
-}
+        font-weight: 400;
+        font-size: 10px;
 
+        text-align: center;
+        color: $base-text;
+}
 .explain-dir {
     padding: 20px;
 }
-
 .btn-direction {
     display: flex;
     justify-content: center;
     align-items: center;
-
     .button-explain {
-        width: 164px;
+    width: 164px;
         height: 42px;
-        angle: 0 deg;
-        opacity: 1;
         border-radius: 10px;
         background-color: $accent-color;
         display: flex;
@@ -76,200 +60,174 @@
         justify-content: center;
         border: none;
     }
-
     .button-explain {
         font-family: Montserrat;
-        font-weight: 600;
-        font-size: 14px;
-        leading-trim: NONE;
-        line-height: 18px;
-        letter-spacing: 0%;
-        text-align: center;
-        vertical-align: middle;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle;
     }
 }
-
 .image-exlain {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .image-mini {
     background-color: $accent-color;
     width: 50px;
-    height: 50px;
-    top: 7px;
-    left: 7px;
-    angle: 0 deg;
-    opacity: 1;
-    border-radius: 50%;
-    padding: 10px;
+        height: 50px;
+        top: 7px;
+        left: 7px;
+        border-radius: 50%;
+        padding: 10px;
 }
-
-.image-colums {
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .image-mini {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 50px;
-    height: 50px;
-    top: -0px;
-    angle: 0 deg;
-    opacity: 1;
+        height: 50px;
+        top: -0px;
 }
-
 .quantity {
     font-family: Montserrat;
-    font-weight: 700;
-    font-size: 36px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 4%;
-    text-align: center;
-    text-transform: uppercase;
-    color: $background-main;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $background-main;
 }
-
 .quantity-text {
     font-family: Montserrat;
-    font-weight: 400;
-    font-size: 11px;
-    leading-trim: NONE;
-    line-height: 170%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: $background-main;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 170%;
+        text-align: center;
+        color: $background-main;
 }
-
 .mini-direction {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
-
+.explain-dir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-directions {
+    width: 220px;
+}
 @media (min-width: 480px) {
-    .explain-div {
-        height: 1624px;
-        background-color: #84A178;
-    }
-
+    .explain-section {
+            height: 1624px;
+            background-color: $sections-background;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    } 
     .quantity-text {
         font-family: Montserrat;
-        font-weight: 400;
-        font-size: 12px;
-        leading-trim: NONE;
-        line-height: 170%;
-        letter-spacing: 0%;
-        text-align: center;
-        color: $background-main;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 170%;
+            text-align: center;
+            color: $background-main;
     }
-
     .text-directions {
-        text-align: start;
-        width: 336px;
-
+        text-align: center;
+        width: 220px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
-
     .explain-animal {
         width: 280px;
     }
 }
-
 @media (min-width: 768px) {
-    .explain-div {
-        height: 1075px;
-        angle: 0 deg;
-        opacity: 1;
-        color: $sections-background;
+    .explain-section {
+            height: 1075px;
+            color: $sections-background;
     }
-
-    .explain-omega {
+    .explain-sector {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    .image-colums {
+    .image-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
     }
-
-    .width-colums {
+    .images-section {
         padding: 50px;
     }
-
     .lorem-expalin {
         text-align: start;
     }
-
     .explain-animal {
         width: 330px;
-        top: 214px;
-        left: 32px;
-        angle: 0 deg;
-        opacity: 1;
-        border-radius: 165px;
+            top: 214px;
+            left: 32px;
+            border-radius: 165px;
     }
-
     .btn-direction {
         display: flex;
         justify-content: start;
+        padding: 0px 200px 0px 0px;
+    }
+    .text-directions {
+        width: 336px;
     }
 }
-
-@media (min-width: 1200px) {
-    .explain-div {
+@media (min-width: 1660px) {
+    .explain-section {
         height: 1228px;
-        angle: 0 deg;
-        opacity: 1;
-        angle: 0 deg;
-        opacity: 1;
         color: $sections-background;
     }
-
     .lorem-expalin {
         display: flex;
         justify-content: center;
         align-items: start;
     }
-
     .text-directions {
+        height: 257px;
         display: flex;
         flex-direction: column;
     }
-
-    .btn-direction {
-        display: flex;
-        justify-content: start;
-    }
-
+        .btn-direction {
+            display: flex;
+            justify-content: start;
+            padding: 100px 190px 0px 0px;
+        }
     .text-cow {
         display: flex;
         text-align: start;
     }
-
     .btn-directions {
-        text-align: start;
+            text-align: start;
     }
-
     .image-exlain {
-        width: 491px;
-        height: 529px;
+             width: 491px;
+            height: 529px;
     }
-
     .explain-animal {
-        width: 491px;
+        height: auto;
+        width: 500px;
     }
 }
 
@@ -486,3 +444,38 @@
         }
     }
 }
+    .explain-main-text-div {
+        display: flex;
+        justify-content: space-between;
+        gap: 600px;
+    }
+    .lorem-expalin {
+        font-size: 16px;
+    }
+
+
+.bi-arrow-right:hover {
+        color: #fff;
+        text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+        animation: neonFlicker 1s infinite;
+                @keyframes neonFlicker {
+                        from {
+                            text-shadow:
+                                0 0 10px rgb(81, 240, 147),
+                                0 0 15x rgb(2, 129, 19);
+                        }
+                
+                        to {
+                            text-shadow:
+                                0 0 20px rgb(45, 196, 90),
+                                0 0 40px rgb(73, 189, 82),
+                                0 0 80px rgb(26, 138, 4);
+                        }
+                    }
+    }
+    .nav-button:hover {
+        }

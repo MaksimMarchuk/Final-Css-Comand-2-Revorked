@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="sass/main.css">
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,12 +31,10 @@
             <ul class="nav-container">
                 <li class="nav-logo"><img src="./src/img/iceCream-logo.webp" alt="logo"></li>
 
-                <div class="nav-direction-div">
-                    <li class="nav-direction">Home</li>
-                    <li class="nav-direction">How it’s made?</li>
-                    <li class="nav-direction">Our products</li>
-                    <li class="nav-direction">Contact</li>
-                </div>
+                <li class="nav-direction">Home</li>
+                <li class="nav-direction">How it’s made?</li>
+                <li class="nav-direction">Our products</li>
+                <li class="nav-direction">Contact</li>
 
                 <div class="nav-btns-div">
                     <li class="nav-element"><i class="bi bi-list"></i></li>
@@ -66,7 +65,6 @@
             </div>
             <div class="hero-img-div">
                 <picture>
-                    <source srcset="./src/img/MainIcecream-desktop.webp" media="(min-width: 1200px)">
                     <source srcset="./src/img/MainIcecream-tablet.webp" media="(min-width: 768px)">
                     <img src="./src/img/MainIcecream-mobile.webp" class="iceCream-img" alt="Ice Cream">
                 </picture>
@@ -78,115 +76,111 @@
                 <p>food trucks</p>
             </div>
         </section>
-
+        
     </header>
     <main class="main">
-        <section class="product-section">
-            <div class="product-text">
-                <h2 style="text-transform: uppercase;">100% natural</h2>
+             <section class="product-section">
+                <div class="product-text">
+                <h2 style="text-transform: uppercase;" >100% natural</h2>
                 <h1 style="text-transform: uppercase;">products</h1>
-            </div>
-            <div class="cards">
+                </div>
                 <div class="product-card">
                     <div class="icecream-img">
-                        <img src="src/img/icecream-card.png" alt="">
+                    <img src="src/img/icecream-card.png" alt="">
                     </div>
                     <h3>ice cream</h3>
                     <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-                    <img class="Arrow" src="src/img/Arrow.png" alt="">
+                    <img src="src/img/Arrow.png" alt="">
                 </div>
 
                 <div class="product-card">
                     <div class="coffee-img">
-                        <img src="src/img/coffee-card.png" alt="">
+                    <img src="src/img/coffee-card.png" alt="">
                     </div>
                     <h3>ice coffee</h3>
                     <p>Fragrant invigorating drink created from 100% natural ingredients without the use of
                         preservatives and flavor enhancers</p>
-                    <img class="Arrow" src="src/img/Arrow.png" alt="">
+                        <img src="src/img/Arrow.png" alt="">
                 </div>
 
                 <div class="product-card">
                     <div class="milkshakes-img">
-                        <img src="src/img/milkshakes-card.png" alt="">
+                    <img src="src/img/milkshakes-card.png" alt="">
                     </div>
                     <h3>milkshakes</h3>
                     <p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other
                         sweets of your choice</p>
-                    <img class="Arrow" src="src/img/Arrow.png" alt="">
+                        <img src="src/img/Arrow.png" alt="">
                 </div>
-            </div>
-        </section>
 
-        <section class="explain-div">
-            <div class="direction-explain">
+            </section>
+
+            <section class="explain-section">
+                <div class="direction-explain">
                 <h2 class="explain-text">TRADITION AND LOVE</h2>
-                <h1 class="explain-h1">how it’s made?</h1>
-            </div>
+                <h1 class="explain-word">how it’s made?</h1>
+                </div>
 
-            <div class="explain-main-text-div">
-                <div class="explain-omega">
+                <div class="explain-main-text-div">
+                            <div class="explain-sector">
                     <div class="image-exlain">
-                        <img class="explain-animal" src="src/img/BigCow.webp" alt="cow">
+                    <img class="explain-animal" src="src/img/BigCow.webp" alt="cow"> 
                     </div>
                     <div class="explain-dir">
-                        <div class="text-directions">
-                            <div class="lorem-expalin">
-                                <p>Ice is a place where you will become not only a little happier, but also healthier.
-                                    Health is the main value for us, and we follow it when creating our handmade
-                                    desserts. </p>
-                            </div>
-                            <div class="lorem-expalin">
-                                <p>We use traditional recipes and 100% natural ingredients.
-                                    Our products are so natural that they can be given to children from the age of three
-                                    years.
-                                    Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
-                                    milkshakes.</p>
-                            </div>
-                            <div class="lorem-expalin">
-                                <p class="text-cow">This is enough to choose ice cream and coffee for any mood!</p>
-                            </div>
+                            <div class="text-directions">
+                        <div class="lorem-expalin">
+                    <p>Ice is a place where you will become not only a little happier, but also healthier.
+                        Health is the main value for us, and we follow it when creating our handmade desserts. </p>
                         </div>
-                        <div class="btn-direction">
-                            <button class="button-explain">Read more <i class="bi bi-caret-right-fill"></i></button>
+                         <div class="lorem-expalin">
+                    <p>We use traditional recipes and 100% natural ingredients.
+                        Our products are so natural that they can be given to children from the age of three years.
+                        Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
                         </div>
-                    </div>
+                          <div class="lorem-expalin">
+                    <p class="text-cow">This is enough to choose ice cream and coffee for any mood!</p>
+                         </div>
+                            </div> 
+                                                 <div class="btn-direction">
+                   <button class="button-explain">Read more <i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                            </div>
+                            </div>
                 </div>
-            </div>
-            <div class="image-colums">
-                <div class="width-colums">
-                    <div class="mini-direction">
+                <div class="image-container">
+                    <div class="width-colums">
+                        <div class="mini-direction">
                         <img class="image-mini" src="src/img/MiniCow.webp" alt="minicow">
+                        </div>
+                        <p class="quantity">721</p>
+                           <div class="quantity-text">
+                            <br> Aliquam ac dui vel dui vulputate
+                            <br>  consectetur. Mauris massa
+                            </div> 
                     </div>
-                    <p class="quantity">721</p>
-                    <div class="quantity-text">
-                        <br> Aliquam ac dui vel dui vulputate
-                        <br> consectetur. Mauris massa
+                       <div class="images-section">
+                        <div  class="mini-direction">
+                            <img class="image-mini" src="src/img/MiniWeight.webp" alt="weight"> 
+                        </div>
+                        <p class="quantity">16KG</p>
+                        <div class="quantity-text">
+                            <br> Aliquam ac dui vel dui vulputate
+                            <br>  consectetur. Mauris massa
+                    </div> 
+                    </div>
+                       <div class="width-colums">
+                        <div class="mini-direction">
+                            <img class="image-mini" src="src/img/MiniIcecream.webp" alt="ice">
+                        </div>
+                        <p class="quantity">84</p>
+                         <div class="quantity-text">
+                            <br> Aliquam ac dui vel dui vulputate
+                            <br>  consectetur. Mauris massa
+                        </div> 
                     </div>
                 </div>
-                <div class="width-colums">
-                    <div class="mini-direction">
-                        <img class="image-mini" src="src/img/MiniWeight.webp" alt="weight">
-                    </div>
-                    <p class="quantity">16KG</p>
-                    <div class="quantity-text">
-                        <br> Aliquam ac dui vel dui vulputate
-                        <br> consectetur. Mauris massa
-                    </div>
-                </div>
-                <div class="width-colums">
-                    <div class="mini-direction">
-                        <img class="image-mini" src="src/img/MiniIcecream.webp" alt="ice">
-                    </div>
-                    <p class="quantity">84</p>
-                    <div class="quantity-text">
-                        <br> Aliquam ac dui vel dui vulputate
-                        <br> consectetur. Mauris massa
-                    </div>
-                </div>
-            </div>
 
-        </section>
+            </section>
 
         <section class="comment-sect">
                 <img src="./src/img/surface.webp" alt="" class="surface-img">
@@ -197,22 +191,39 @@
                     <p class="comment-text">I love visiting your cafe. You prepare the most delicious ice cream in
                         Los
                         Angeles! In addition,
+            <section class="comment-sect">
+                <img src="" alt="" class="surface-img">
+
+                <div class="comment-div">
+                    <img src="" alt="">
+
+                    <p>I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition,
                         you have beautiful serving, cozy atmosphere and polite staff.</p>
+
+                    <p>Emily, Los Angeles</p>
                 </div>
 
-                <p class="locate-text">Emily, Los Angeles</p>
-                <div class="comment-circle">
-                    <i class="bi bi-circle-fill"></i>
-                    <i class="bi bi-circle-fill"></i>
-                    <i class="bi bi-circle-fill"></i>
-                </div>
-            </div>
+            </section>
 
-        </section>
+            <section class="location-sect">
 
-        <section class="location-sect">
+                <div class="location-card">
 
-            <div class="location-card">
+                    <div class="location-name-div">
+                        <p>CAFE</p>
+                        <p>Chicago</p>
+                        <a href="">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+                    </div>
+                    <div class="location-time-div">
+                        <p>Monday - Friday</p>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday</p>
+                        <p>08:00 AM - 16:00 PM</p>
+                    </div>
+                    <div class="location-info-div">
+                        <p>+61(0) 383 766 284</p>
+                        <p>noreply@envato.com</p>
+                    </div>
 
                 <div class="location-name-div">
                     <h1>CAFE</h1>
@@ -230,9 +241,23 @@
                     <p>noreply@envato.com</p>
                 </div>
 
-            </div>
+                <div class="location-card">
 
-            <div class="location-card">
+                    <div class="location-name-div">
+                        <p>FOOD TRUCK</p>
+                        <p>Los Angeles</p>
+                        <a href="">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+                    </div>
+                    <div class="location-time-div">
+                        <p>Monday - Friday</p>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday</p>
+                        <p>08:00 AM - 16:00 PM</p>
+                    </div>
+                    <div class="location-info-div">
+                        <p>+61(0) 383 766 284</p>
+                        <p>noreply@envato.com</p>
+                    </div>
 
                 <div class="location-name-div">
                     <h1>FOOD TRUCK</h1>
@@ -250,9 +275,23 @@
                     <p>noreply@envato.com</p>
                 </div>
 
-            </div>
+                <div class="location-card">
 
-            <div class="location-card">
+                    <div class="location-name-div">
+                        <p>CAFE</p>
+                        <p>New York</p>
+                        <p>726 Sterling Pl, Brooklyn, NY 11222, USA</p>
+                    </div>
+                    <div class="location-time-div">
+                        <p>Monday - Friday</p>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday</p>
+                        <p>08:00 AM - 16:00 PM</p>
+                    </div>
+                    <div class="location-info-div">
+                        <p>+61(0) 383 766 284</p>
+                        <p>noreply@envato.com</p>
+                    </div>
 
                 <div class="location-name-div">
                     <h1>CAFE</h1>
@@ -270,7 +309,10 @@
                     <p>noreply@envato.com</p>
                 </div>
 
-            </div>
+                <div class="location-btn-div">
+                    <button>Our Locations</button>
+                    <button>Franchise</button>
+                </div>
 
             <div class="location-btn-div">
                 <button class="location-first-btn">Our Locations<i class="bi bi-chevron-right"></i></button>
@@ -279,57 +321,39 @@
 
         </section>
 
+            </section>
+
     </main>
 
     <footer class="footer">
         <section class="footer-sect">
             <div class="footer-preview-text-div">
+                <h2>homemade ice cream made </h2>
+                <h1>with passion</h1>
+            </div>
+            <div class="footer=contact-div">
+                <p><span>Feel free to contact </span>+61 (0) 383 766 284</p>
+            </div>
+
+            <div class="footer-subtext-div">
+                <p>© 2022 - IceCream. All Rights Reserved.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="./modal.js"></script>
                 <h2>Homemade Ice Cream Made</h2>
                 <h1>With Passion</h1>
             </div>
             <div class="footer-right-col">
                 <div class="footer-socials-div">
                     <a href="#" class="footer-social-icon" aria-label="GitHub">
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="17" cy="17" r="17" fill="#F8D24E" />
-                            <path
-                                d="M17 7C11.5074 7 7 11.5074 7 17C7 21.687 10.2889 25.9447 14.6562 27V23.6916C14.2235 23.7863 13.8253 23.7891 13.3847 23.6592C12.7938 23.4848 12.3136 23.0912 11.9571 22.4909C11.7299 22.1076 11.3272 21.6919 10.9072 21.7224L10.8042 20.5551C11.7125 20.4773 12.4984 21.1086 12.9648 21.8923C13.172 22.2408 13.4105 22.4451 13.7166 22.5354C14.0125 22.6226 14.3302 22.5807 14.7003 22.45C14.7933 21.7089 15.1328 21.4315 15.3893 21.0408V21.0402C12.7846 20.6517 11.7466 19.2699 11.3346 18.1792C10.7886 16.731 11.0816 14.9218 12.047 13.7784C12.0658 13.7561 12.0996 13.6978 12.0865 13.6571C11.6439 12.32 12.1833 11.2139 12.2031 11.0965C12.714 11.2476 12.797 10.9445 14.4222 11.9319L14.7031 12.1007C14.8206 12.1707 14.7837 12.1308 14.9012 12.1219C15.5797 11.9376 16.295 11.8358 16.9998 11.8267C17.71 11.8358 18.4207 11.9376 19.1274 12.1294L19.2183 12.1385C19.2104 12.1373 19.243 12.1328 19.2978 12.1001C21.328 10.8704 21.2551 11.2723 21.7995 11.0953C21.8192 11.2128 22.3514 12.3369 21.9135 13.6571C21.8544 13.839 23.6736 15.5048 22.6653 18.1787C22.2533 19.2699 21.2154 20.6517 18.6107 21.0402V21.0408C18.9446 21.5497 19.3457 21.8204 19.3436 22.8702V27C23.7111 25.9447 26.9998 21.687 26.9998 17C27 11.5074 22.4926 7 17 7V7Z"
-                                fill="#84A178" />
-                        </svg>
+                        <img src="src/img/github.webp" alt="GitHub" width="22" height="22">
                     </a>
                     <a href="#" class="footer-social-icon" aria-label="Telegram">
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_10601_122)">
-                                <circle cx="17" cy="17" r="17" fill="#F8D24E" />
-                                <path
-                                    d="M13.6728 19.5238L13.3353 23.9538C13.8181 23.9538 14.0272 23.7602 14.278 23.5278L16.5416 21.5088L21.232 24.7146C22.0922 25.162 22.6983 24.9264 22.9303 23.976L26.0091 10.5116L26.01 10.5108C26.2828 9.32401 25.5501 8.85991 24.712 9.15106L6.61504 15.6175C5.37996 16.0649 5.39866 16.7075 6.40509 16.9987L11.0317 18.3418L21.7786 12.0658C22.2843 11.7532 22.7442 11.9261 22.3659 12.2387L13.6728 19.5238Z"
-                                    fill="#84A178" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_10601_122">
-                                    <rect width="34" height="34" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
+                        <img src="src/img/telegram.webp" alt="Telegram" width="22" height="22">
                     </a>
                     <a href="#" class="footer-social-icon" aria-label="Facebook">
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_10601_115)">
-                                <path
-                                    d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z"
-                                    fill="#F8D24E" />
-                                <path
-                                    d="M21.7235 16.9804H18.9502V27.2001H14.7484V16.9804H12.75V13.3888H14.7484V11.0646C14.7484 9.40261 15.5333 6.80005 18.9876 6.80005L22.1 6.81315V10.2994H19.8417C19.4713 10.2994 18.9505 10.4856 18.9505 11.2784V13.3922H22.0906L21.7235 16.9804Z"
-                                    fill="#84A178" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_10601_115">
-                                    <rect width="34" height="34" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
+                        <img src="src/img/facebook.webp" alt="Facebook" width="22" height="22">
                     </a>
                 </div>
                 <div class="footer-contact-div">
