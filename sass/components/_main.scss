@@ -272,3 +272,217 @@
         width: 491px;
     }
 }
+
+.comment-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/src/img/comment-mobile-bg.webp);
+    background-position: center;
+    background-size: cover;
+    height: 1069px;
+
+    .surface-img {
+        position: relative;
+        bottom: 35px;
+    }
+
+    .comment-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .comment-img {
+            margin-top: 50px;
+            width: 85px;
+            height: 85px;
+        }
+
+        .comment-text-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: $sections-background;
+            width: 280px;
+            height: 260px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+
+            .comment-text {
+                color: $base-text;
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 254.99999999999997%;
+                letter-spacing: 0%;
+                width: 202px;
+            }
+        }
+
+        .locate-text {
+            text-align: center;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 186%;
+            letter-spacing: 0%;
+        }
+
+        .comment-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+
+            .bi.bi-circle-fill {
+
+                &:nth-child(1) {
+                    color: $sections-background;
+                }
+            }
+        }
+    }
+}
+
+.location-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: $sections-background;
+
+    .location-card {
+        background-color: white;
+        width: 280px;
+        height: 412px;
+        border-radius: 24px;
+        padding: 30px;
+        position: relative;
+        bottom: 330px;
+
+        p {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        .location-name-div {
+
+            h1 {
+                background-color: $accent-color;
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 120%;
+                letter-spacing: 4%;
+                width: fit-content;
+                padding: 5px 20px;
+                border-radius: 4px;
+            }
+
+            p {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 186%;
+                letter-spacing: 4%;
+                margin-top: 20px;
+            }
+
+            a {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 183%;
+                letter-spacing: 4%;
+                text-decoration: none;
+                color: $highlighted-text;
+                width: 190px;
+                margin-top: 10px;
+            }
+        }
+
+        .location-time-div {
+            margin-top: 40px;
+
+            p {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 186%;
+                letter-spacing: 0%;
+                color: $text-muted;
+            }
+
+            h3 {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 186%;
+                letter-spacing: 0%;
+                margin-top: 10px;
+            }
+        }
+
+        .location-info-div {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 160%;
+            letter-spacing: 0%;
+            margin-top: 40px;
+        }
+    }
+
+    .location-btn-div {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            width: 196px;
+            height: 42px;
+            border-radius: 10px;
+            border-style: none;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+
+            i {
+                -webkit-text-stroke: 1px black;
+                padding-left: 10px;
+            }
+        }
+
+        .location-first-btn {
+            position: relative;
+            bottom: 200px;
+            background-color: $accent-color;
+        }
+
+        .location-two-btn {
+            position: relative;
+            bottom: 160px;
+            border: 2px solid $accent-color;
+            background-color: $sections-background;
+        }
+    }
+}
+
+@media (min-width:480px){
+    .comment-sect{
+
+        .surface-img{
+            width: 440px;
+            height: 204px;
+            bottom: 40px;
+        }
+    }
+}
